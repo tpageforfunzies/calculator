@@ -1,8 +1,7 @@
-var display = "0"; // what is in display already
-var saved = ""; //display before operation was pressed
-var pressed = ""; // what is pressed and going to display
-var operation = 0; // *, /, +, -
-var maxLength = 30; // max numbers in display
+let display = "0"; // what is in display already
+let saved = ""; //display before operation was pressed
+let operation = 0; // *, /, +, -
+const maxLength = 30; // max numbers in display
 
 //  calculate, =
 function calculate() {
@@ -49,8 +48,7 @@ function addDigit(input){
 
 //  change sign, +/-
 function changeSign(){
-    var sign = display.charAt(0);
-    var newDisplay = "";
+    let sign = display.charAt(0);
     if (sign === "-"){
         display = display.substring(1);
     }
